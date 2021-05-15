@@ -1,5 +1,11 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.blog %></p>
+<hr>
+<div></div>
+<strong>Comments:</strong>
+<% @post.comments.each do |comment| %>
+  <p><%= comment.message %></p>
+<% end %>
 
 <%= link_to "Post a comment", new_post_comment_path(@post) %>
 <hr>
