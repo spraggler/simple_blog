@@ -1,0 +1,6 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.blog %></p>
+
+<%= link_to "Post a comment", new_post_comment_path(@post) %>
+<hr>
+<%= link_to "Return to posts", posts_path %>
